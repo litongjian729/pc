@@ -1,0 +1,735 @@
+@charset "UTF-8";
+html, body, div, li, ul, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, span, ol, a, i, em, b, strong, input, img {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+}
+
+input, img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:target, a:active, a:visited {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00b38a;
+    text-decoration: underline;
+    text-underline: #00b38a;
+}
+
+ul, li, ol, dl, dd, dt {
+    list-style: none;
+}
+
+.w1024 {
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.head {
+    width: 100%;
+    background: #333;
+}
+
+.head .top {
+    margin: 0 auto;
+    min-width: 1024px;
+    max-width: 1308px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.head .top a {
+    display: inline-block;
+    margin-top: 7px;
+    width: 85px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.head .topLeft {
+    float: left;
+    margin-left: 3px;
+}
+
+.head .topLeft .lg_app {
+    border-right: 1px solid #5d5d5d;
+    color: #27baa2;
+    background: url("../img/app_icon_4940eb3.png") no-repeat;
+}
+
+.head .topLeft .lg_app:hover {
+    color: #05eaaf;
+}
+
+.head .topLeft .lg_qy {
+    color: #c4c3c3;
+}
+
+.head .topLeft .lg_qy:hover, .head .topRight a:hover {
+    color: #ffffff;
+}
+
+.head .topRight {
+    float: right;
+    margin-right: 3px;
+}
+
+.head .topRight a {
+    width: 55px;
+    color: #c4c3c3;
+}
+
+.head .topRight .lg_dl {
+    border-right: 1px solid #5d5d5d;
+}
+
+.navigation {
+    border-bottom: 1px solid #d2d2d2;
+    width: 100%;
+    height: 54px;
+    background-color: #fafafa;
+}
+
+.navigation a {
+    display: inline-block;
+}
+
+.navigation h2 {
+    float: left;
+    width: 97px;
+    height: 34px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navigation .address {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.navigation .address span {
+    width: 62px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #333;
+}
+
+.navigation .address .switch {
+    color: #999;
+    font-size: 12px;
+}
+
+.navigation ul {
+    position: absolute;
+    left: 277px;
+    top: 0;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    margin: 0 16px;
+    padding: 0 5px;
+    width: 36px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}
+
+.navigation ul li a:hover {
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    border-bottom: 2px solid #00b38a;
+    color: #333;
+}
+
+.navigation ul li a.home {
+    border-bottom: 2px solid #00b38a;
+}
+
+/*header end*/
+.content {
+    margin-top: 89px;
+    overflow: hidden;
+}
+
+.content .left {
+    width: 230px;
+    float: left;
+    z-index: 20;
+}
+
+.content .left > div {
+    background-color: #fafafa;
+}
+
+.content .list {
+    position: relative;
+    padding: 6px 12px;
+    border: 2px solid transparent;
+}
+
+.content .list:hover .border {
+    background-color: #ffffff;
+}
+
+.content .list:hover {
+    border-color: #c9cbce;
+    background-color: #ffffff;
+}
+
+.content .list:hover .menu {
+    display: block;
+}
+
+.content .left h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 8px;
+}
+
+.content .left h2 span {
+    float: right;
+    width: 13px;
+    height: 30px;
+    background: url("../img/arr_6c6ecd7.png") no-repeat 0 5px;
+}
+
+.content .left a {
+    display: inline-block;
+    margin: 0 2px 5px 0;
+    padding: 0 8px;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.left .border {
+    position: absolute;
+    left: 226px;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    z-index: 120;
+    background-color: transparent;
+}
+
+.left .menu {
+    display: none;
+    position: absolute;
+    left: 228px;
+    top: -2px;
+    z-index: 20;
+    overflow: hidden;
+    border: 2px solid #c9cbce;
+    padding: 15px 30px 0 30px;
+    width: 540px;
+    background-color: #ffffff;
+}
+
+.left .menu dl {
+    margin-bottom: 20px;
+}
+
+.left .menu dl dd a {
+    line-height: 28px;
+    background: url("../img/arr_6c6ecd7.png") no-repeat -29px 4px;
+}
+
+.left .menu dl dt {
+    position: absolute;
+    width: 70px;
+    left: 20px;
+}
+
+.left .menu dl dt a {
+    float: right;
+    color: #333;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.left .menu dl dt a:hover {
+    color: #00b38a;
+    text-underline: #00b38a;
+}
+
+.left .menu dl dd {
+    display: block;
+    margin-left: 110px;
+    border-left: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+.left .menu dl dd div {
+    margin-left: -1px;
+}
+
+.left .list2 .menu2 {
+    position: absolute;
+    top: -48px;
+}
+
+.left .list3 .menu3 {
+    position: absolute;
+    top: -40px;
+}
+
+.left .list4 .menu4 {
+    position: absolute;
+    top: -40px;
+}
+
+.left .list5 .menu5 {
+    position: absolute;
+    top: -343px;
+}
+
+.left .list6 .menu6 {
+    position: absolute;
+    top: -155px;
+}
+
+.left .list7 .menu7 {
+    position: absolute;
+    top: -152px;
+}
+
+.left .list7 h2 .newLabel {
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    width: 37px;
+    height: 17px;
+    background: url("../img/newLabel.png") no-repeat center 0, 0;
+}
+
+.left .bottom {
+    margin-top: 12px;
+    border-bottom: 1px solid #00b38a;
+}
+
+.left .bottom a {
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 46px;
+    font-size: 18px;
+}
+
+.left .bottom a:hover {
+    text-decoration: none;
+}
+
+.left .bottom span {
+    float: right;
+    margin-right: 19px;
+    margin-top: 14px;
+    width: 21px;
+    height: 21px;
+    background: url("../img/arr_btn.png") no-repeat 0 -19px;
+    cursor: pointer;
+}
+
+.content .right {
+    float: right;
+    padding-bottom: 100px;
+    width: 745px;
+}
+
+.content .right form div {
+    width: 741px;
+    height: 35px;
+    border: 2px solid #00b38a;
+}
+
+.content .right input[type="text"] {
+    padding: 5px 0 5px 8px;
+    width: 570px;
+    font-size: 16px;
+    line-height: 15px;
+    outline: none;
+    float: left;
+}
+
+.content .right input[type="submit"] {
+    float: right;
+    width: 150px;
+    height: 35px;
+    background-color: #00b38a;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.right .search {
+    width: 744px;
+    height: 14px;
+    line-height: 22px;
+    margin: 12px 0 20px 0;
+}
+
+.right .search dt {
+    float: left;
+    color: #333;
+}
+
+.right .search dd {
+    float: left;
+    margin-right: 20px;
+}
+
+.right .search dd a {
+    color: #00b38a;
+}
+.banner {
+    margin: 0 0 18px;
+    position: relative;
+    width: 774px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.banner .bannerBg {
+    float: left;
+    position: absolute;
+    left: 0;
+    width: 612px;
+    overflow: hidden;
+}
+
+.banner .bannerBg li {
+    width: 612px;
+    height: 160px;
+}
+
+.banner .bannerBg img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.bannerCtrl{
+    float: right;
+    position: relative;
+    top: 0;
+    right: 29px;
+    width: 121px;
+    height: 160px;
+}
+.bannerCtrl em{
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 127px;
+    height: 50px;
+    z-index: 21;
+    background: url("../img/banner_point.png") 0 0 no-repeat;
+}
+.bannerCtrl li{
+    position: relative;
+    width: 113px;
+    height: 42px;
+    border: 4px solid #d3d3d3;
+    margin-bottom: 5px;
+}
+.bannerCtrl li i{
+    position: absolute;
+    width: 113px;
+    height: 42px;
+    background: url("../img/layer.png") no-repeat;
+}
+
+.thumbs {
+    position: relative;
+    margin: 0 0 25px;
+    padding: 0;
+    height: 118px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.thumbs li {
+    float: left;
+    position: relative;
+    margin-right: 8px;
+    width: 110px;
+    height: 110px;
+    border: 2px solid #fafafa;
+    background: #fff;
+    overflow: hidden;
+}
+
+.thumbs li a {
+    display: block;
+    color: #fff;
+}
+
+.thumbs li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbs li a div {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 179, 138, .9);
+}
+
+.thumbs li a h2 {
+    margin: 10px 8px 8px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.thumbs li a em {
+    margin: 0 6px;
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: rgba(255, 255, 255, .3);
+}
+
+.thumbs li a p {
+    margin: 6px 8px;
+    font-size: 12px;
+    line-height: 18px;
+}
+#hotPosition {
+    width: 100%;
+    height: 40px;
+    background-color: #f6f6f6;
+}
+
+#hotPosition li {
+    float: left;
+    width: 112px;
+    height: 38px;
+    border-top: 2px solid transparent;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+#hotPosition li.selected {
+    background: #ffffff;
+    border-top: 2px solid #00b38a;
+}
+
+#hotPosition li:hover {
+    background: #ffffff;
+    border-top: 2px solid #00b38a;
+}
+
+.divLeft, #divRight {
+    width: 100%;
+}
+
+.divLeft ul {
+    padding-left: 15px;
+    padding-top: 22px;
+    width: 100%;
+}
+
+.divLeft ul .L {
+    float: left;
+    width: 420px;
+}
+
+.divLeft ul a {
+    font-size: 16px;
+    color: #00b38a;
+}
+
+.divLeft ul .p1 span {
+    color: #666;
+    margin-left: 10px;
+}
+
+.divLeft ul .p2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.divLeft ul .p2 .money {
+    color: #fa6041;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.divLeft ul .p2 span {
+    font-size: 14px;
+}
+
+.divLeft .bottom {
+    background-color: #f6f6f6;
+    border-bottom: 1px dashed #666666;
+    height: 40px;
+    width: 100%;
+}
+
+.divLeft .bottom .p {
+    float: left;
+    width: 420px;
+}
+
+.divLeft .bottom p {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.divLeft .bottom p span {
+    margin-right: 15px;
+    padding: 0 3px;
+    border: 1px #dcdcdc solid;
+    text-align: center;
+}
+
+.divRight {
+    display: none;
+}
+
+.right .more {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid #ececed;
+}
+
+.right .more a {
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    width: 105px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background: #00b38a;
+    cursor: pointer;
+}
+
+.right .more a:hover {
+    text-decoration: none;
+}
+
+.right .more span {
+    float: right;
+    margin-right: 10px;
+    width: 30px;
+    height: 27px;
+    background: url("../img/arr_btn.png") no-repeat 10px 8px;
+}
+
+.right .link {
+    margin-top: 24px;
+}
+
+.right .link dt {
+    float: left;
+    width: 68px;
+    height: 24px;
+    font-size: 15px;
+}
+
+.right .link .addLink {
+    padding-left: 68px;
+}
+
+.right .link .addLink a:hover {
+    color: #0061a6;
+}
+
+.right .link .addLink a {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 0 10px;
+    border-right: 1px solid #999;
+    font-size: 12px;
+}
+
+.footer {
+    padding-top: 9px;
+    width: 100%;
+    height: 58px;
+    border-top: 1px solid #ececed;
+}
+
+.footer i {
+    display: inline-block;
+    width: 198px;
+    height: 19px;
+    background: url("../img/footer_lagou.png") no-repeat 0 0;
+}
+
+.footer .w1024 .divLink {
+    position: absolute;
+    top: 0;
+    left: 255px;
+    color: #666;
+}
+
+.footer .w1024 a {
+    margin-right: 10px;
+    color: #666;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer .w1024 a .new {
+    display: inline-block;
+    width: 32px;
+    height: 15px;
+    background: url("../img/new.png") no-repeat 2px 0;
+}
+
+.footer .check {
+    height: 34px;
+    text-align: center;
+}
+
+.footer .check span {
+    font-size: 6px;
+    color: #999;
+}
+
+.footer .check a {
+    font-size: 6px;
+    color: #999;
+}
